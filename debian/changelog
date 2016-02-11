@@ -1,0 +1,5 @@
+python-pydot-ng (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #814386)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 11 Feb 2016 11:05:43 +0800

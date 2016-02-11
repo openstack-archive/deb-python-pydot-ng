@@ -1,0 +1,44 @@
+Source: python-pydot-ng
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+Build-Depends-Indep: python-pytest (>= 2.6.4),
+                     python3-pytest (>= 2.6.4),
+                     python3-unittest2 (>= 0.8.0),
+                     pytyon-unittest2 (>= 0.8.0),
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-pydot-ng.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-pydot-ng.git
+Homepage: https://github.com/pydot/pydot-ng
+
+Package: python-pydot-ng
+Architecture: all
+Depends: graphviz,
+         python-pyparsing (>= 2.0.1+dfsg1-1),
+         ${misc:Depends},
+         ${python:Depends},
+Description: interface to Graphviz's Dot - Python 2.7
+ This module provides with a full interface to create handle modify and process
+ graphs in Graphviz’s dot language.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-pydot-ng
+Architecture: all
+Depends: graphviz,
+         python-pyparsing (>= 2.0.1+dfsg1-1),
+         ${misc:Depends},
+         ${python3:Depends},
+Description: interface to Graphviz's Dot - Python 3.x
+ This module provides with a full interface to create handle modify and process
+ graphs in Graphviz’s dot language.
+ .
+ This package contains the Python 3.x module.
