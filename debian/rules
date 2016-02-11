@@ -1,23 +1,24 @@
 #!/usr/bin/make -f
 
 PYTHONS:=$(shell pyversions -vr)
-PYTHON3S:=$(shell py3versions -vr)
+#PYTHON3S:=$(shell py3versions -vr)
 
 UPSTREAM_GIT = git://github.com/pydot/pydot-ng.git
 include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
-	dh $@ --buildsystem=python_distutils --with python2,python3
+	dh $@ --buildsystem=python_distutils --with python2
+#,python3
 
 override_dh_auto_install:
 	set -e ; for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python-pydot-ng; \
 	done
-	set -e ; for pyvers in $(PYTHON3S); do \
-		python$$pyvers setup.py install --install-layout=deb \
-			--root $(CURDIR)/debian/python3-pydot-ng; \
-	done
+#	set -e ; for pyvers in $(PYTHON3S); do \
+#		python$$pyvers setup.py install --install-layout=deb \
+#			--root $(CURDIR)/debian/python3-pydot-ng; \
+#	done
 	rm -rf $(CURDIR)/debian/python*/usr/lib/python*/dist-packages/*.pth
 
 override_dh_auto_test:
