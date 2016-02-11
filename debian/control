@@ -16,8 +16,8 @@ Build-Depends-Indep: graphviz,
 #                     python3-pytest (>= 2.6.4),
 #                     python3-unittest2 (>= 0.8.0),
 Standards-Version: 3.9.6
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-pydot-ng.git
-Vcs-Git: git://anonscm.debian.org/openstack/python-pydot-ng.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=openstack/python-pydot-ng.git
+Vcs-Git: https://anonscm.debian.org/git/openstack/python-pydot-ng.git
 Homepage: https://github.com/pydot/pydot-ng
 
 Package: python-pydot-ng
