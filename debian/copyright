@@ -2,13 +2,13 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pydot-ng
 Source: git://github.com/pydot/pydot-ng.git
 
-Files: debian/*
-Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
+Files: *
+Copyright: (c) 2013-2015, Sebastian Kalinowski <ero@dkbza.org>
+           (c) 2004-2015, Ero Carrera
 License: Expat
 
-Files: *
-Copyright: (c) 2013, Sebastian Kalinowski <ero@dkbza.org>
-           (c) 2004 Ero Carrera
+Files: debian/*
+Copyright: (c) 2016, Thomas Goirand <zigo@debian.org>
 License: Expat
 
 License: Expat
