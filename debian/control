@@ -11,9 +11,9 @@ Build-Depends: debhelper (>= 9),
                python3-all,
                python3-setuptools,
 Build-Depends-Indep: python-pytest (>= 2.6.4),
+                     python-unittest2 (>= 0.8.0),
                      python3-pytest (>= 2.6.4),
                      python3-unittest2 (>= 0.8.0),
-                     pytyon-unittest2 (>= 0.8.0),
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-pydot-ng.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-pydot-ng.git
