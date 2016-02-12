@@ -23,9 +23,10 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
-	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
-		python$$pyvers -m pytest test || true ; \
-	done
+	echo "No unit tests"
+#	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
+#		python$$pyvers -m pytest test || true ; \
+#	done
 endif
 
 override_dh_clean:
