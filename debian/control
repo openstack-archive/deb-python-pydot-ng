@@ -11,6 +11,7 @@ Build-Depends: debhelper (>= 9),
                python3-all,
                python3-setuptools,
 Build-Depends-Indep: graphviz,
+                     python-pyparsing (>= 2.0.1+dfsg1),
                      python-pytest (>= 2.6.4),
                      python-unittest2 (>= 0.8.0),
 #                     python3-pytest (>= 2.6.4),
@@ -23,7 +24,7 @@ Homepage: https://github.com/pydot/pydot-ng
 Package: python-pydot-ng
 Architecture: all
 Depends: graphviz,
-         python-pyparsing (>= 2.0.1+dfsg1-1),
+         python-pyparsing (>= 2.0.1+dfsg1),
          ${misc:Depends},
          ${python:Depends},
 Description: interface to Graphviz's Dot - Python 2.7
@@ -35,7 +36,7 @@ Description: interface to Graphviz's Dot - Python 2.7
 #Package: python3-pydot-ng
 #Architecture: all
 #Depends: graphviz,
-#         python-pyparsing (>= 2.0.1+dfsg1-1),
+#         python-pyparsing (>= 2.0.1+dfsg1),
 #         ${misc:Depends},
 #         ${python3:Depends},
 #Description: interface to Graphviz's Dot - Python 3.x
