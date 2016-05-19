@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pydot-ng
-Source: git://github.com/pydot/pydot-ng.git
+Source: https://github.com/pydot/pydot-ng
 
 Files: *
 Copyright: (c) 2013-2015, Sebastian Kalinowski <ero@dkbza.org>
