@@ -1,9 +1,13 @@
-python-pydot-ng (1.0.0-3) UNRELEASED; urgency=medium
+python-pydot-ng (1.0.0-4) UNRELEASED; urgency=medium
 
+  [ Ondřej Nový ]
   * d/rules: Changed UPSTREAM_GIT protocol to https
   * d/copyright: Changed source URL to https protocol
 
- -- Ondřej Nový <novy@ondrej.org>  Thu, 19 May 2016 21:29:27 +0200
+  [ Thomas Goirand ]
+  * Do not run Python3 tests.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 01 Jul 2016 21:37:12 +0000
 
 python-pydot-ng (1.0.0-2) unstable; urgency=medium
 
