@@ -1,0 +1,46 @@
+Description: Use png instead of jpeg
+ pydot-ng attempting to use the "jpe" format, which seems removed from
+ graphviz. This patch uses png instead.
+Author: Thomas Goirand <zigo@debian.org>
+Bug-Debian: https://bugs.debian.org/829191
+Forwarded: no
+Last-Update: 2016-08-01
+
+--- python-pydot-ng-1.0.0.orig/test/test_pydot.py
++++ python-pydot-ng-1.0.0/test/test_pydot.py
+@@ -157,7 +157,7 @@ class TestGraphAPI(unittest.TestCase):
+ 
+         g.set_shape_files(pngs)
+ 
+-        jpe_data = g.create(format='jpe')
++        jpe_data = g.create(format='png')
+ 
+         hexdigest = sha256(jpe_data).hexdigest()
+ 
+@@ -178,7 +178,7 @@ class TestGraphAPI(unittest.TestCase):
+     def _render_with_graphviz(self, filename):
+ 
+         p = subprocess.Popen(
+-            (DOT_BINARY_PATH, '-Tjpe'),
++            (DOT_BINARY_PATH, '-Tpng'),
+             cwd=os.path.dirname(filename),
+             stdin=open(filename, 'rt'),
+             stderr=subprocess.PIPE, stdout=subprocess.PIPE
+@@ -214,7 +214,7 @@ class TestGraphAPI(unittest.TestCase):
+         if not isinstance(g, list):
+             g = [g]
+ 
+-        jpe_data = NULL_SEP.join([_g.create(format='jpe') for _g in g])
++        jpe_data = NULL_SEP.join([_g.create(format='png') for _g in g])
+ 
+         return sha256(jpe_data).hexdigest()
+ 
+@@ -347,7 +347,7 @@ class TestGraphAPI(unittest.TestCase):
+         g = pydot.Dot()
+         g.add_node(pydot.Node("test", label=string.printable))
+         #print g.to_string()
+-        data = g.create(format='jpe')
++        data = g.create(format='png')
+         self.assertEqual(len(data) > 0, True)
+ 
+ if __name__ == '__main__':
