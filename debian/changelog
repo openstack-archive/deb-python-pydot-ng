@@ -8,6 +8,7 @@ python-pydot-ng (1.0.0-3) unstable; urgency=medium
   * Do not run Python3 tests.
   * Add patch to use png instead of jpeg, as 'jpe' support seems gone away
     from graphviz (Closes: #829191).
+  * Standards-Version is now 3.9.8 (no change).
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 01 Jul 2016 21:37:12 +0000
 
