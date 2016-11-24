@@ -1,3 +1,12 @@
+========================
+Team and repository tags
+========================
+
+.. image:: http://governance.openstack.org/badges/deb-python-pydot-ng.svg
+    :target: http://governance.openstack.org/reference/tags/index.html
+
+.. Change things from this point on
+
 pydot - Python interface to Graphviz's Dot language
 ---------------------------------------------------
 Ero Carrera (c) 2004-2007
